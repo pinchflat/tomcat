@@ -51,7 +51,7 @@ public class JSONPinchFlatFormatter extends Formatter {
         logData.put(METHOD, logRecord.getSourceMethodName());
         logData.put(MESSAGE, formatMessage(logRecord));
         logData.put(THREAD, threadNameLoader.populateNameById(logRecord.getThreadID()));
-        ;
+
         if (logRecord.getThrown() != null) {
             logData.put(EXCEPTION, stackTraceDumper.dump(logRecord.getThrown()));
         }
