@@ -5,7 +5,6 @@ import com.github.pinchflat.tomcat.util.JsonDateTimeFormatter;
 import com.github.pinchflat.tomcat.util.StackTraceDumper;
 import com.github.pinchflat.tomcat.util.ThreadNameLoader;
 import com.jsoniter.output.JsonStream;
-import org.omg.CORBA.Environment;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
