@@ -19,7 +19,7 @@ import java.util.logging.LogRecord;
  */
 public class JSONPinchFlatFormatter extends Formatter {
 
-    private static final String SOURCE = "source";
+    private static final String LABEL = "label";
     private static final String TOMCAT = "tomcat";
     private static final String TIMESTAMP = "timestamp";
     private static final String LOGGER = "logger";
@@ -43,7 +43,7 @@ public class JSONPinchFlatFormatter extends Formatter {
     @Override
     public String format(final LogRecord logRecord) {
         final Map<String,String> logData = new LinkedHashMap<>();
-        logData.put(SOURCE, TOMCAT);
+        logData.put(LABEL, TOMCAT);
         logData.put(TIMESTAMP, dateTimeFormatter.format(logRecord.getMillis()));
         logData.put(LOGGER, logRecord.getLoggerName());
         logData.put(LEVEL, logRecord.getLevel().getLocalizedName());
